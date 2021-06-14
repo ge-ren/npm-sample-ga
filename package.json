@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ge-ren"
-  }
+     "registry": "https://npm.pkg.github.com/@ge-ren"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

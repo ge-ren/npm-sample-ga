@@ -12,9 +12,9 @@ jobs:
       with:
         registry-url: https://npm.pkg.github.com/
         node-version: 12
-        scope: '@VinitaSharma61'
+        scope: '@ge-ren'
     - run: npm install
     - run: npm publish
       env: 
-       NODE_AUTH_TOKEN: ${{ secrets.TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.TOKEN }}
     

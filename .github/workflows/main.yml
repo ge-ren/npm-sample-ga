@@ -1,0 +1,20 @@
+name: push pull to GA packages
+
+on: push
+
+jobs:
+  publish-node:
+    runs-on: ubuntu-latest
+    steps:
+    - name: scm checkout
+      uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        registry-url: https://npm.pkg.github.com/
+        node-version: 12
+        scope: ${{ github.actor }}
+    - run: npm install
+    - run: npm publish
+      env: 
+       NODE_AUTH_TOKEN: ${{ secrets.TOKEN }}
+    

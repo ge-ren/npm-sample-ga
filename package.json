@@ -1,10 +1,10 @@
 {
-  "name": "npm-sample-ga",
+  "name": "@ge-ren/npm-sample-ga",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "publishConfig": {
-     "registry": "https://npm.pkg.github.com/"
+     "registry": "https://npm.pkg.github.com/@ge-ren"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
